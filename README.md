@@ -1,4 +1,4 @@
-<!-- # ![Alt text](/readme/banner.jpg) -->
+# ![Alt text](/readme/banner.jpg) 
 
 # Selection Project
 
