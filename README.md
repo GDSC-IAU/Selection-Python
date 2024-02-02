@@ -1,6 +1,4 @@
-# ![Alt text](/readme/banner.png) 
-
-# Selection Project
+# ![Alt text](/readme/banner.png)
 
 ## Table of Contents
 
