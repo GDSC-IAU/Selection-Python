@@ -2,16 +2,24 @@
 
 ## Table of Contents
 
-TODO:
+- [Overview](#overview)
+- [Learning Objectives](#learning-objectives)
+- [Resources](#resources)
+  - [Online Resources](#online-resources)
+    - [Github](#github)
+    - [Python](#python)
+- [Setup and Tutorial](#setup-and-tutorial)
+- [Project Overview](#project-overview)
+  - [Requirements](#requirements)
+  - [Submission Guidelines](#submission-guidelines)
 
 ## Overview
 
-TODO:
+In this project, you will be creating a Sentiment Analyzer program using reviews from the given data in this repository. You will be using Python to analyze the data and Jupyter Notebooks to present your findings.
 
 ## Learning Objectives
 
 - Learn how to use Git and Github.
-- Learn how to use Python to scrape data from the internet.
 - Learn how to use Python to analyze data.
 - Learn how to use Jupyter Notebooks.
 
@@ -30,7 +38,10 @@ TODO:
 
 #### Python
 
-- TODO:
+- [Python Tutorial (w3schools.com)](https://www.w3schools.com/python/default.asp)
+- [Python Video](https://www.youtube.com/watch?v=lk2rWa4iM68)
+- [Python for Beginners (freecodecamp.org)](https://www.freecodecamp.org/news/ultimate-beginners-python-course/)
+- [Provided Tutorial](./Tutorial/)
 
 ## Setup and Tutorial
 
@@ -161,7 +172,7 @@ git clone https://github.com/YOUR_NAME/Selection-Project.git
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#### You are now ready to code! Make the required changes which are given in section [Project Overview](#project-overview) and then follow the steps below to push your changes to Github. Make sure to regularly commit your changes. If you want to continue the tutorial, skip to section [2.2. Python](#22-python)
+#### You are now ready to code! Make the required changes which are given in section [Project Overview](#project-overview) and then follow the steps below to push your changes to Github. Make sure to regularly commit your changes
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -203,19 +214,6 @@ git push
 ![Alt text](/readme/image11.png)
 - Click on the create pull request button.
 ![Alt text](/readme/image12.png)
-
-#### 2.2. Python
-
-You can find starter python tutorials [here](./Tutorial/).
-
-##### 2.2.6. Code Structuring and Formatting
-
-- Code should be structured and formatted properly.
-- Code should be divided into functions and classes.
-- Functions and classes should be named properly.
-- Functions and classes should be defined before they are used.
-
-An example code structure is provided within the repository itself.
 
 ## Project Overview
 
