@@ -34,10 +34,6 @@ TODO:
 
 - TODO:
 
-### Custom Resources
-
-- [Selenium Tutorial](https://www.youtube.com/playlist?list=PL2zBjIlLXAP3-AoRoGOCyPW85H9xFhFwE)
-
 ## Setup and Tutorial
 
 ### 1. Setup
@@ -225,7 +221,7 @@ An example code structure is provided within the repository itself.
 
 ## Project Overview
 
-Your task is to create a Sentiment Analyzer program using reviews from either a movie, book, or game that you like. You can use whatever method you please to scrape data from the internet. The final submission should be a jupyter notebook analyzing the reviews of the movie, book, or game you chose.
+Your task is to create a Sentiment Analyzer program using reviews from the given data in this repository
 
 An example of a sentiment analyzer can be found [here](https://github.com/Radwan-Albahrani/Sentiment-Analyzer).
 
@@ -235,13 +231,11 @@ The notebook should contain the following:
 
 - A description of the project.
 - A description of the dataset used.
-- A description of the methods used to scrape the data.
 - A description of the methods used to analyze the data.
 - A description of the results.
 
 Some libraries that you might find useful:
 
-- [Selenium](https://www.selenium.dev/documentation/)
 - [Pandas](https://pypi.org/project/pandas/)
 - [TextBlob](https://textblob.readthedocs.io/en/dev/)
 
