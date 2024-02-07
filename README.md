@@ -15,15 +15,20 @@ Text Sentiment Analyzer is a Python application with a purpose of analyzing the 
 ## Dependencies 📌
 
 This code requires the following libraries:
+
 • pandas
+
 • numpy
+
 • matplotlib
+
 • seaborn
+
 • textblob
 
-The code begins by reading a dataset from a CSV file and selecting the relevant columns. It then extracts all the reviews for the product and calculates some basic statistics about the data, such as the number of columns and rows, and the length of the shortest review. The code uses lambda functions to apply the sentiment analyzer to each review in the dataset, in particular, the line productDF['review_polarity'] = productDF['review_text'].apply(lambda x: TextBlob(x).sentiment.polarity) uses a lambda function to calculate the polarity of each review in the review_text column. The lambda function takes in a review text as input, and returns the polarity of the text as calculated by the TextBlob library's sentiment.polarity attribute.
+The code begins by reading a dataset from a CSV file and selecting the relevant columns. It then extracts all the reviews for the product and calculates some basic statistics about the data, such as the number of columns and rows, and the length of the shortest review. The code uses lambda functions to apply the sentiment analyzer to each review in the dataset, in particular, the line ```productDF['review_polarity'] = productDF['review_text'].apply(lambda x: TextBlob(x).sentiment.polarity)``` uses a lambda function to calculate the polarity of each review in the review_text column. The lambda function takes in a review text as input, and returns the polarity of the text as calculated by the TextBlob library's sentiment.polarity attribute.
 
-Similarly, the line productDF['review_category'] = productDF['review_text'].apply(lambda x: sentimentAnalyzer(x)) uses a lambda function to apply the sentiment analyzer to each review in the dataset. The lambda function takes in a review text as input, and returns the sentiment category of the text as calculated by the sentimentAnalyzer function. The results were plotted and visualized as a Histogram and a Pie chart.
+Similarly, the line ```productDF['review_category'] = productDF['review_text'].apply(lambda x: sentimentAnalyzer(x))``` uses a lambda function to apply the sentiment analyzer to each review in the dataset. The lambda function takes in a review text as input, and returns the sentiment category of the text as calculated by the sentimentAnalyzer function. The results were plotted and visualized as a Histogram and a Pie chart.
 
 The code then identifies false positives and false negatives in the sentiment analysis. A false positive is a review that has a positive sentiment but a rating less than 3. A false negative is a review that has a negative sentiment but a rating greater than 4. The code calculates the average polarity of false positives and false negatives, and the average length of false positives and false negatives.
 
