@@ -18,8 +18,6 @@ This code requires the following libraries:
 
 • pandas
 
-• numpy
-
 • matplotlib
 
 • seaborn
