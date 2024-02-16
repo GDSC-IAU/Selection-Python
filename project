@@ -1,0 +1,10 @@
+import pandas as pd
+from nltk.sentiment import SentimentIntensityAnalyzer
+df = pd.read_csv('data.csv')
+sid = SentimentIntensityAnalyzer()
+def get_sentiment_score(text):
+    sentiment = sid.polarity_scores(text)
+    return sentiment['compound']
+df['sentiment_score'] = df['reviews.text'].apply(get_sentiment_score)
+df['sentiment'] = df['sentiment_score'].apply(lambda score: 'Positive' if score > 0 else 'Negative' if score < 0 else 'Neutral')
+print(df[['reviews.text', 'sentiment_score', 'sentiment']])
