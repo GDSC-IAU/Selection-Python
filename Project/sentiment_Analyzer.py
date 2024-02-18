@@ -1,0 +1,1 @@
+print("this project to make sentimrnt analyzer")
