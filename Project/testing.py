@@ -1,5 +1,6 @@
 from textblob import TextBlob
 import pandas as pd
+
 def analyzeSentiment(text):
     blob = TextBlob(text)
     sentiment_score = blob.sentiment.polarity
@@ -10,6 +11,7 @@ def analyzeSentiment(text):
         return 'Negative'
     else:
         return 'Neutral' 
+
 df = pd.read_csv('data.csv')
 
 product_id = 'AVqkIhwDv8e3D1O-lebb' #or any id you want to search for 
@@ -25,3 +27,6 @@ negative = (df_product['sentiment'] == 'Negative').sum()
 neutral = (df_product['sentiment'] == 'Neutral').sum()
 
 print(f"The product with Name {product_name} has {positive} positive reviews, {negative} negative reviews, and {neutral} neutral reviews")
+
+# Save the dataframe to a CSV file
+df_product.to_csv('output.csv', index=False)
