@@ -18,7 +18,7 @@ df_product = df[df['product_id'] == product_id]
 
 product_name = df_product['name'].iloc[0]
 
-df_product['sentiment'] = df_product['reviews.text'].apply(analyze_sentiment)
+df_product['sentiment'] = df_product['reviews.text'].apply(analyzeSentiment)
 
 positive = (df_product['sentiment'] == 'Positive').sum()
 negative = (df_product['sentiment'] == 'Negative').sum()
