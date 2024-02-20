@@ -28,5 +28,4 @@ neutral = (df_product['sentiment'] == 'Neutral').sum()
 
 print(f"The product with Name {product_name} has {positive} positive reviews, {negative} negative reviews, and {neutral} neutral reviews")
 
-# Save the dataframe to a CSV file
 df_product.to_csv('output.csv', index=False)
